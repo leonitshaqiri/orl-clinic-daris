@@ -44,7 +44,7 @@ export default function ContactSection() {
 
   return (
     <div className='w-full md:w-11/12 mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-10 relative'>
-      <div className=''>
+      <div className='mx-4 md:mx-0'>
         <h2 className='text-3xl font-bold text-gray-800 mb-6'>Na Kontaktoni</h2>
 
         <form
@@ -176,14 +176,14 @@ export default function ContactSection() {
       </div>
 
       <div
-        className='rounded-2xl overflow-hidden shadow-lg md:h-1/2'
-        style={{ minHeight: '400px' }}
+        className='rounded-2xl overflow-hidden shadow-lg mx-4 md:mx-0 md:h-1/2 min-h-[250px] md:min-h-[400px]'
+        // style={{ minHeight: '400px' }}
       >
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d792.0304246083138!2d21.47149286069747!3d42.4589537198808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d42.4589619!2d21.4719062!5e1!3m2!1sen!2s!4v1757516683589!5m2!1sen!2s'
           width='100%'
           height='100%'
-          style={{ border: 0 }}
+          style={{ border: 0, minHeight: '250px' }}
           allowFullScreen
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
